@@ -1,0 +1,1 @@
+This repo contains the css assignment given by the instructor. The assignment is to create a responsive layout for a website using CSS Grid. 

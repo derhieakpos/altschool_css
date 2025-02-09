@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <div class="individuals">
+          <img src="assest/images/Logo.png" alt="" />
+          <h2>For Individuals</h2>
+          <h3>
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </h3>
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                placeholder="Select here"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="weight">Weight (kg)</label>
+              <input
+                type="number"
+                id="weight"
+                name="weight"
+                placeholder="Enter Weight"
+              />
+            </div>
+            <div class="form-group">
+              <label for="height">Height (cm)</label>
+              <input
+                type="number"
+                id="height"
+                name="height"
+                placeholder="Enter height here.."
+                required
+              />
+            </div>
+            <div class="form-group full-width">
+              <label for="activity">Activity Level</label>
+              <select id="activity" name="activity" required>
+                <option value="">Select here</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <p class="warning">
+              By clicking Register, you agree to our
+              <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.
+            </p>
+            <button type="submit" class="register-btn">Register</button>
+          </form>
+        </div>
+      </main>
+</body>
+</html>
