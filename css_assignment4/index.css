@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F7FDF6;
+    padding: 0 5vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.icons {
+    display: none;
+}
+
+p, span {
+    font-style: normal;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.individuals {
+    width: 45vw;
+    justify-content: center;
+    padding: 0 5%;
+    align-items: center;
+    align-self: center;
+    font-family: 'Lato', sans-serif;
+    /* font-style: oblique; */
+    line-height: 1.7rem;
+}
+
+.individuals h2 {
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #7B7B7B;
+}
+
+.form-container {
+    background: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 500px; */
+    width: 45vw;
+    background-color: #FFFFFF;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-group {
+    width: calc(50% - 7.5px); /* Two items per row on desktops */
+}
+
+.full-width {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #96E1DA !important; /* Light blue border */
+    background-color: #f0f8ff !important; /* Light blue background */
+    outline: none !important; /* Removes default browser outline */
+    box-shadow: 0px 0px 3px #96E1DA !important; /* Adds a subtle glow effect */
+}
+
+.warning {
+    font-size: 12px;
+    color: #555;
+    width: 100%;
+    text-align: center;
+}
+
+.warning a {
+    color: #2EC4BC;
+    text-decoration: none;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background: #2EC4BC;
+    border-color: #96E1DA !important;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background: #96E1DA;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 30px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%; /* Single column on smaller screens */
+    }
+    .form-container {
+        width: 90vw;
+    }
+    .individuals {
+        padding: 0;
+        width: 90vw;
+    }
+    .individuals img {
+        height: 110px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 10px; */
+        padding-bottom: 30px;
+
+        /* text-align: end; */
+        /* align-self: center; */
+    }
+
+    .icons img {
+        height: 12px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 508px){
+    .individuals img {
+        height: 80px;
+    }
+
+    #dob {
+        width: 100%;
+    }
+
+    input[type="date"] {
+        min-width: 100%; /* Adjust as needed */
+        width: 100%; /* Ensures it fills available space */
+        max-width: 100%; /* Prevents overflow */
+    }
+
+}
