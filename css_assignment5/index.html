@@ -1,11 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/wppusher-logo copy (1).png" alt="Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Learn More</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help</a></li>
+        <li><button class="account-btn">Account</button></li>
+      </ul>
+    </nav>
+    <div class="mainContainer">
+      <form class="form-container">
+        <h2><span class="number">①</span> Your Basic Information</h2>
+        <div class="form-group name-fields">
+          <div class="names">
+            <label for="FirstName">First Name</label>
+            <input type="FirstName" placeholder="First Name" required />
+          </div>
+          <div class="names">
+            <label for="LastName">Last Name</label>
+            <input type="LastName" placeholder="Last Name" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <h2><span class="number">②</span> Your Payment Information</h2>
+        <div class="form-group">
+          <label for="card">Credit Card</label>
+          <input type="text" id="card" placeholder="Card Number" required />
+        </div>
+
+        <button class="btn">Buy WP Pusher</button>
+        <p class="support-text">
+          Need any help? Don’t hesitate to contact support!
+        </p>
+        <div class="stripe">
+          <img src="images/powered_by_stripe.png" alt="" />
+        </div>
+      </form>
+      <div class="sideBarImage">
+        <img src="images/side bar content (1).png" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
